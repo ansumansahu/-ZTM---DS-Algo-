@@ -1,3 +1,32 @@
+Big O:
 Big O Notation is the language we use for talking about how long an algorithm takes to run and which algorithm is better than the other when comes to scale, regardless our computers.
 
 So, to fully understand and wrap it all up. When we talk about Big O and scalability of code, we simply mean we grow bigger and bigger with our Elements or inputs how much does the algorithm slow down, the less it slows down or the slower it slows down is the better. So instead of using DateTime() or Date() objects to calculate the time which is not reliable solution to test the efficiency of the code. We could just measure how many Operations the computer must perform. As each Operation takes different time on every computer. So, Big O allows us and concerns us with how many steps it takes in a function.
+
+O(n) 🡪 Linear Time
+O(1) 🡪 Constant Time
+
+The 4 Rules Of Calculating the Big O:
+1. Worst Case
+2. Remove Constants
+3. Different terms of inputs:
+For a function having multiple loops the solution will be O(n) for the first loop and O(m) for the second loop or what ever we want to name it. So, the overall Big O of this function would be O(n + m). This is how you apply the third rule of calculating the Big O which is Different terms for inputs.
+
+For nested loops, Big O Notation is O(n^2) - Quadratic Time if number of elements looped over is same. While if nested loops have different lengths then - O(nm)
+
+4. Drop Non-Dominants
+If you have a function that has a loop that has a Big O of O(n) and two nested loops with Big O of O(n^2) then we drop the non-dominant term,which is O(n) in this case and overall Big O of this function would be O(n^2).
+
+Big O will be the foundation that will help us to decide which data structure is going to be best for our case. For example, Arrays as a data structure allows us to access at O(1) constant time, but when it comes to searching things its going to give us linear Time O(n).
+
+How we measure space complexity?
+When a program executes it has two ways to remember things in its memory:
+1. Heap : The heap is where we store variables that has assigned values.
+2. Stack : The stack is where we keep track of our functions calls.
+We simply look at the total size relative to the size of the input and see how many new variable or new memory we’re allocating and how much memory is being used.
+
+What causes space complexity?
+- Adding Variables 
+- Adding Data Structures 
+- Function call 
+- Memory Allocations
