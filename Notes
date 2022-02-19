@@ -30,3 +30,17 @@ What causes space complexity?
 - Adding Data Structures 
 - Function call 
 - Memory Allocations
+
+Data Structure:
+A data structure is a collection of values, that values can have a relationship among them, and they can have functions apply to them.
+
+(1) ARRAYS:
+Arrays are one of the most commonly-used data structures. The elements of an array are stored in contiguous memory locations.
+
+Arrays are of two types : Static and Dynamic
+Static arrays have fixed, pre-defined amount of memory that they can use, whereas in dynamic arrays this is flexible.(In Python we only have dynamic arrays)
+
+Some basic operations and their complexities are given below :
+Look-up/Accses - O(1)   Push/Pop - O(1)*
+Insert - O(n)           Delete - O(n)
+
