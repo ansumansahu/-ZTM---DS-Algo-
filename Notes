@@ -44,3 +44,7 @@ Some basic operations and their complexities are given below :
 Look-up/Accses - O(1)   Push/Pop - O(1)*
 Insert - O(n)           Delete - O(n)
 
+(2) Hash Tables:
+Hash Tables are data structures which generally provide very fast O(1) lookups, insertions and deletions. In Python, dictionaries are implemented as hash tables.
+
+In general, the lookup, insert and delete operations all are very fast, in the order of O(1). But in some cases, more than one keys can map to the same slot and that increases the time complexity by some margin, although not by a lot in most cases. This is known as a collision.
