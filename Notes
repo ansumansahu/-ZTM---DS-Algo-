@@ -48,3 +48,20 @@ Insert - O(n)           Delete - O(n)
 Hash Tables are data structures which generally provide very fast O(1) lookups, insertions and deletions. In Python, dictionaries are implemented as hash tables.
 
 In general, the lookup, insert and delete operations all are very fast, in the order of O(1). But in some cases, more than one keys can map to the same slot and that increases the time complexity by some margin, although not by a lot in most cases. This is known as a collision.
+
+Linked lists :
+These are, as the name suggests, a list which is linked. It consists of nodes which contain data and a pointer to the next node in the list. The list is connected with the help of these pointers. These nodes are scattered in memory, quite like the buckets in a hash table. The node where the list starts is called the head of the list and the node where it ends, or last node, is called the tail of the list.
+
+The average time complexity of some operations invloving linked lists are as follows:
+Look-up : O(n)  Insert : O(n)
+Delete : O(n)   Append : O(1)
+Prepend : O(1)
+
+Pointer:
+A pointer is simply a reference to another place is memory or another object/node. Example:
+dict1={'a':"alphabet"} 
+dict2=dict1
+# we are not creating another memory space storing the same thing instead both dict point to the same memory allocation.
+dict1["a"]="digit" #changing the value will be reflected for both cases
+print(dict1["a"]) #digit
+print(dict2["a"]) #digit
